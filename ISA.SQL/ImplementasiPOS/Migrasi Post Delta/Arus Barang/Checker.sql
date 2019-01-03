@@ -1,0 +1,7 @@
+USE ISAdb_JKT
+GO
+DELETE FROM ISAdb_JKT.dbo.Checker
+GO
+INSERT INTO dbo.Checker
+SELECT * FROM ISAdb.dbo.Checker
+GO

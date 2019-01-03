@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <row id="ISADBDepoNonRetail" user="ðÌ" pwd="âÌîÌöÔâl" datasource="°Ôêè¦èæ®ÔòÌÜâ" host="2817.isa.com" default="1"/>
+  <row id="ISADBDepoRetail" user="ðÌ" pwd="âÌîÌöÔâl" datasource="°Ôêè®ÔòÌÜâ" host="2817.isa.com" default="0"/>
+  <row id="ISADBDepoFinance" user="ðÌ" pwd="âÌîÌöÔâl" datasource="°ÔêèÜæÌæÐÔ" host="2817.isa.com" default="0"/>
+  <row id="ISADBDepoBatchReport" user="ðÌ" pwd="âÌîÌöÔâl" datasource="°ÔêèÌòÐÚ®Ôêèîò" host="2817.isa.com" default="0"/>
+</root>
+

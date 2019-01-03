@@ -1,0 +1,27 @@
+﻿CREATE PARTITION FUNCTION PartitionDate (DATETIME)
+ AS RANGE LEFT FOR
+ VALUES ('20100101');
+ GO
+ 
+ 
+ CREATE PARTITION FUNCTION PartitionFingerPrint (DATETIME)
+ AS RANGE LEFT FOR
+ VALUES ('20100101');
+ GO
+ 
+  
+ --- Step 3 : Attach Partition Scheme to FileGroups
+ CREATE PARTITION SCHEME ISAdb_PartitionNON_NOTA_DATE_Scheme
+ AS PARTITION PartitionDate
+ TO ([PRIMARY], [NON_NOTA]);
+ GO
+ 
+ CREATE PARTITION SCHEME ISAdb_PartitionNOTA_DATE_Scheme
+ AS PARTITION PartitionDate
+ TO ([PRIMARY], [NOTA]);
+ 
+ 
+ 
+ GO
+ 
+  

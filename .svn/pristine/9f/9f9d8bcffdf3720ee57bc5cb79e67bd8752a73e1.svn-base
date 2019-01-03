@@ -1,0 +1,9 @@
+﻿USE ISAFinance_JKT
+GO
+
+
+
+INSERT INTO DBO.Tagihan
+SELECT * FROM ISAFinance.DBO.Tagihan WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Tagihan)
+
+GO 

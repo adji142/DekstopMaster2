@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.Mutasi 
+WHERE MutasiID NOT IN (SELECT MutasiID FROM ISAdb.DBO.Mutasi)
+
+
+GO
+

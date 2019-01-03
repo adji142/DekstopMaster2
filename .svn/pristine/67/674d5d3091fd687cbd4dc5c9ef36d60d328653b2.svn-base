@@ -1,0 +1,7 @@
+﻿USE ISAdb_JKT
+GO
+
+INSERT INTO DBO.Mutasi
+SELECT * FROM ISAdb.DBO.Mutasi WHERE MutasiID NOT IN (SELECT MutasiID FROM DBO.Mutasi)
+
+GO 

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPinjamanPegawai" targetNamespace="http://tempuri.org/dsPinjamanPegawai.xsd" xmlns:mstns="http://tempuri.org/dsPinjamanPegawai.xsd" xmlns="http://tempuri.org/dsPinjamanPegawai.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPinjamanPegawai" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPinjamanPegawai" msprop:Generator_DataSetName="dsPinjamanPegawai" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TglPinjam" msprop:Generator_UserColumnName="TglPinjam" msprop:Generator_ColumnVarNameInTable="columnTglPinjam" msprop:Generator_ColumnPropNameInRow="TglPinjam" msprop:Generator_ColumnPropNameInTable="TglPinjamColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JNS" msprop:Generator_UserColumnName="JNS" msprop:Generator_ColumnVarNameInTable="columnJNS" msprop:Generator_ColumnPropNameInRow="JNS" msprop:Generator_ColumnPropNameInTable="JNSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ref" msprop:Generator_UserColumnName="Ref" msprop:Generator_ColumnVarNameInTable="columnRef" msprop:Generator_ColumnPropNameInRow="Ref" msprop:Generator_ColumnPropNameInTable="RefColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoRef" msprop:Generator_UserColumnName="NoRef" msprop:Generator_ColumnVarNameInTable="columnNoRef" msprop:Generator_ColumnPropNameInRow="NoRef" msprop:Generator_ColumnPropNameInTable="NoRefColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Debet" msprop:Generator_UserColumnName="Debet" msprop:Generator_ColumnVarNameInTable="columnDebet" msprop:Generator_ColumnPropNameInRow="Debet" msprop:Generator_ColumnPropNameInTable="DebetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Kredit" msprop:Generator_UserColumnName="Kredit" msprop:Generator_ColumnVarNameInTable="columnKredit" msprop:Generator_ColumnPropNameInRow="Kredit" msprop:Generator_ColumnPropNameInTable="KreditColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" msprop:Generator_UserColumnName="saldo" msprop:Generator_ColumnVarNameInTable="columnsaldo" msprop:Generator_ColumnPropNameInRow="saldo" msprop:Generator_ColumnPropNameInTable="saldoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="awalMurni" msprop:Generator_UserColumnName="awalMurni" msprop:Generator_ColumnVarNameInTable="columnawalMurni" msprop:Generator_ColumnPropNameInRow="awalMurni" msprop:Generator_ColumnPropNameInTable="awalMurniColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="awalNota" msprop:Generator_UserColumnName="awalNota" msprop:Generator_ColumnVarNameInTable="columnawalNota" msprop:Generator_ColumnPropNameInRow="awalNota" msprop:Generator_ColumnPropNameInTable="awalNotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="awalInvt" msprop:Generator_UserColumnName="awalInvt" msprop:Generator_ColumnVarNameInTable="columnawalInvt" msprop:Generator_ColumnPropNameInRow="awalInvt" msprop:Generator_ColumnPropNameInTable="awalInvtColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="awalBiaya" msprop:Generator_UserColumnName="awalBiaya" msprop:Generator_ColumnVarNameInTable="columnawalBiaya" msprop:Generator_ColumnPropNameInRow="awalBiaya" msprop:Generator_ColumnPropNameInTable="awalBiayaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NIP" msprop:Generator_UserColumnName="NIP" msprop:Generator_ColumnVarNameInTable="columnNIP" msprop:Generator_ColumnPropNameInRow="NIP" msprop:Generator_ColumnPropNameInTable="NIPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama" msprop:Generator_UserColumnName="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="debetMurni" msprop:Generator_UserColumnName="debetMurni" msprop:Generator_ColumnVarNameInTable="columndebetMurni" msprop:Generator_ColumnPropNameInRow="debetMurni" msprop:Generator_ColumnPropNameInTable="debetMurniColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="debetNota" msprop:Generator_UserColumnName="debetNota" msprop:Generator_ColumnVarNameInTable="columndebetNota" msprop:Generator_ColumnPropNameInRow="debetNota" msprop:Generator_ColumnPropNameInTable="debetNotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="debetInvt" msprop:Generator_UserColumnName="debetInvt" msprop:Generator_ColumnVarNameInTable="columndebetInvt" msprop:Generator_ColumnPropNameInRow="debetInvt" msprop:Generator_ColumnPropNameInTable="debetInvtColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="debetBiaya" msprop:Generator_UserColumnName="debetBiaya" msprop:Generator_ColumnVarNameInTable="columndebetBiaya" msprop:Generator_ColumnPropNameInRow="debetBiaya" msprop:Generator_ColumnPropNameInTable="debetBiayaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kreditMurni" msprop:Generator_UserColumnName="kreditMurni" msprop:Generator_ColumnVarNameInTable="columnkreditMurni" msprop:Generator_ColumnPropNameInRow="kreditMurni" msprop:Generator_ColumnPropNameInTable="kreditMurniColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kreditNota" msprop:Generator_UserColumnName="kreditNota" msprop:Generator_ColumnVarNameInTable="columnkreditNota" msprop:Generator_ColumnPropNameInRow="kreditNota" msprop:Generator_ColumnPropNameInTable="kreditNotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kreditInvt" msprop:Generator_UserColumnName="kreditInvt" msprop:Generator_ColumnVarNameInTable="columnkreditInvt" msprop:Generator_ColumnPropNameInRow="kreditInvt" msprop:Generator_ColumnPropNameInTable="kreditInvtColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kreditBiaya" msprop:Generator_UserColumnName="kreditBiaya" msprop:Generator_ColumnVarNameInTable="columnkreditBiaya" msprop:Generator_ColumnPropNameInRow="kreditBiaya" msprop:Generator_ColumnPropNameInTable="kreditBiayaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="akhirMurni" msprop:Generator_UserColumnName="akhirMurni" msprop:Generator_ColumnVarNameInTable="columnakhirMurni" msprop:Generator_ColumnPropNameInRow="akhirMurni" msprop:Generator_ColumnPropNameInTable="akhirMurniColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="akhirNota" msprop:Generator_UserColumnName="akhirNota" msprop:Generator_ColumnVarNameInTable="columnakhirNota" msprop:Generator_ColumnPropNameInRow="akhirNota" msprop:Generator_ColumnPropNameInTable="akhirNotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="akhirInvt" msprop:Generator_UserColumnName="akhirInvt" msprop:Generator_ColumnVarNameInTable="columnakhirInvt" msprop:Generator_ColumnPropNameInRow="akhirInvt" msprop:Generator_ColumnPropNameInTable="akhirInvtColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="akhirBiaya" msprop:Generator_UserColumnName="akhirBiaya" msprop:Generator_ColumnVarNameInTable="columnakhirBiaya" msprop:Generator_ColumnPropNameInRow="akhirBiaya" msprop:Generator_ColumnPropNameInTable="akhirBiayaColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

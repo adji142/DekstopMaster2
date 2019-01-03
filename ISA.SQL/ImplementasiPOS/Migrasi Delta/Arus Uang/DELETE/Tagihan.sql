@@ -1,0 +1,9 @@
+﻿USE ISAFinance_JKT
+GO
+
+DELETE FROM DBO.Tagihan 
+WHERE RecordID NOT IN (SELECT RecordID FROM ISAFinance.DBO.Tagihan)
+
+
+GO
+

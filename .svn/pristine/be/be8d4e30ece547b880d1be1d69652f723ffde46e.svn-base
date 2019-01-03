@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.MutasiDetail 
+WHERE RecordID NOT IN (SELECT RecordID FROM ISAdb.DBO.MutasiDetail)
+
+
+GO
+

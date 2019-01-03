@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+INSERT INTO DBO.Opname
+SELECT * FROM ISAdb.DBO.Opname WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Opname)
+
+GO  
+ 

@@ -1,0 +1,7 @@
+USE ISAdb_JKT
+GO
+DELETE FROM ISAdb_JKT.dbo.HistoryHPP
+GO
+INSERT INTO dbo.HistoryHPP 
+SELECT * FROM ISAdb_JKT_BAK.dbo.HistoryHPP 
+GO

@@ -1,0 +1,7 @@
+﻿USE ISAdb_JKT
+GO
+
+INSERT INTO DBO.Kompensasi
+SELECT * FROM ISAdb.DBO.Kompensasi WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Kompensasi)
+
+GO  

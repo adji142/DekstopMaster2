@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLaporanPiutang" targetNamespace="http://tempuri.org/dsLaporanPiutang.xsd" xmlns:mstns="http://tempuri.org/dsLaporanPiutang.xsd" xmlns="http://tempuri.org/dsLaporanPiutang.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISADbDepoNonRetailConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISADbDepoNonRetailConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Toko.Properties.Settings.GlobalReference.Default.ISADbDepoNonRetailConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLaporanPiutang" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLaporanPiutang" msprop:Generator_DataSetName="dsLaporanPiutang" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoTransaksi" msprop:Generator_UserColumnName="NoTransaksi" msprop:Generator_ColumnVarNameInTable="columnNoTransaksi" msprop:Generator_ColumnPropNameInRow="NoTransaksi" msprop:Generator_ColumnPropNameInTable="NoTransaksiColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TglTransaksi" msprop:Generator_UserColumnName="TglTransaksi" msprop:Generator_ColumnVarNameInTable="columnTglTransaksi" msprop:Generator_ColumnPropNameInRow="TglTransaksi" msprop:Generator_ColumnPropNameInTable="TglTransaksiColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NamaToko" msprop:Generator_UserColumnName="NamaToko" msprop:Generator_ColumnVarNameInTable="columnNamaToko" msprop:Generator_ColumnPropNameInRow="NamaToko" msprop:Generator_ColumnPropNameInTable="NamaTokoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Alamat" msprop:Generator_UserColumnName="Alamat" msprop:Generator_ColumnVarNameInTable="columnAlamat" msprop:Generator_ColumnPropNameInRow="Alamat" msprop:Generator_ColumnPropNameInTable="AlamatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaSales" msprop:Generator_UserColumnName="NamaSales" msprop:Generator_ColumnVarNameInTable="columnNamaSales" msprop:Generator_ColumnPropNameInRow="NamaSales" msprop:Generator_ColumnPropNameInTable="NamaSalesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Piutang" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Piutang" msprop:Generator_ColumnVarNameInTable="columnPiutang" msprop:Generator_ColumnPropNameInRow="Piutang" msprop:Generator_ColumnPropNameInTable="PiutangColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Pembayaran" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Pembayaran" msprop:Generator_ColumnVarNameInTable="columnPembayaran" msprop:Generator_ColumnPropNameInRow="Pembayaran" msprop:Generator_ColumnPropNameInTable="PembayaranColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sisa" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Sisa" msprop:Generator_ColumnVarNameInTable="columnSisa" msprop:Generator_ColumnPropNameInRow="Sisa" msprop:Generator_ColumnPropNameInTable="SisaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TglOverdue" msprop:Generator_UserColumnName="TglOverdue" msprop:Generator_ColumnVarNameInTable="columnTglOverdue" msprop:Generator_ColumnPropNameInRow="TglOverdue" msprop:Generator_ColumnPropNameInTable="TglOverdueColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NominalOverdue" msprop:Generator_UserColumnName="NominalOverdue" msprop:Generator_ColumnPropNameInRow="NominalOverdue" msprop:Generator_ColumnVarNameInTable="columnNominalOverdue" msprop:Generator_ColumnPropNameInTable="NominalOverdueColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

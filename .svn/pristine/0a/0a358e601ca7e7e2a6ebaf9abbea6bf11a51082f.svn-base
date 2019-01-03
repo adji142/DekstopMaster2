@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.Giro 
+WHERE GiroID NOT IN (SELECT GiroID FROM ISAdb.DBO.Giro)
+
+
+GO  

@@ -1,0 +1,19 @@
+sqlcmd -S CRBISA -U sa -P password -t 0 -i PeriodeGroup.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i StokDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i DetailPlafon.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i DPJPPC.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Expedisi.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Giro.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Gudang.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i HistoryBMK.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i HistoryBMK2.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i HistoryHPP.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i HistoryHPPA.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i HPPC.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i JPPC.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Kategori.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KelompokBarang.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KodePos.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KoliTone.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KompensasiKerugian.sql
+PAUSE

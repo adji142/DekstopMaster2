@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+
+INSERT INTO DBO.ACCBonusSales
+SELECT * FROM ISAdb.DBO.ACCBonusSales WHERE NotaRecID NOT IN (SELECT NotaRecID FROM DBO.ACCBonusSales)
+
+GO 

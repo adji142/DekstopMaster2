@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.ACCBonusSales 
+WHERE NotaRecID NOT IN (SELECT NotaRecID FROM ISAdb.DBO.ACCBonusSales)
+
+
+GO

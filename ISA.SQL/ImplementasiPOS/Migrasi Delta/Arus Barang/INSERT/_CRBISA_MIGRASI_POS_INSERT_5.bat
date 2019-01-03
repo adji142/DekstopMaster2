@@ -1,0 +1,24 @@
+sqlcmd -S CRBISA -U sa -P password -t 0 -i OrderPenjualan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i OrderPenjualanDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Kompensasi.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i NotaPenjualan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i NotaPenjualanDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i ReturPenjualan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i ReturPenjualanDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i ReturPenjualanTarikanDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i ACCBonusSales.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i ACCBonusSalesDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KoreksiPenjualan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i KoreksiReturPenjualan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Koret.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i Selisih.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i SelisihDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i PenjualanPotongan.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i PenjualanPotonganDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i RekapKoli.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i RekapKoliDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i RekapKoliSubDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i PengirimanEkspedisi.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i PengirimanEkspedisiDetail.sql
+sqlcmd -S CRBISA -U sa -P password -t 0 -i BackOrder.sql
+PAUSE

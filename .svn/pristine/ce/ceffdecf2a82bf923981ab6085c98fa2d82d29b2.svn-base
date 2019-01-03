@@ -1,0 +1,7 @@
+﻿USE ISAdb_JKT
+GO
+
+INSERT INTO DBO.TargetSales
+SELECT * FROM ISAdb.DBO.TargetSales WHERE RecordID NOT IN (SELECT RecordID FROM DBO.TargetSales)
+
+GO  

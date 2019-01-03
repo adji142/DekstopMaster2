@@ -1,0 +1,7 @@
+﻿USE ISAFinance_JKT
+GO
+
+
+INSERT INTO DBO.KartuPiutangLunas
+SELECT * FROM ISAFinance.DBO.KartuPiutangLunas WHERE KPID NOT IN (SELECT KPID FROM DBO.KartuPiutangLunas)
+GO 

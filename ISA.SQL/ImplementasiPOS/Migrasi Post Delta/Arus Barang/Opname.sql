@@ -1,0 +1,7 @@
+USE ISAdb_JKT
+GO
+DELETE FROM ISAdb_JKT.dbo.Opname
+GO
+INSERT INTO dbo.Opname
+SELECT * FROM ISAdb_JKT.dbo.Opname 
+GO

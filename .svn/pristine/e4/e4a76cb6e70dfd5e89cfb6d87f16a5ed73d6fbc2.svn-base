@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPerbandinganItemToko" targetNamespace="http://tempuri.org/dsPerbandinganItemToko.xsd" xmlns:mstns="http://tempuri.org/dsPerbandinganItemToko.xsd" xmlns="http://tempuri.org/dsPerbandinganItemToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPerbandinganItemToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsPerbandinganItemToko" msprop:Generator_UserDSName="dsPerbandinganItemToko" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data1" msprop:Generator_UserTableName="Data1" msprop:Generator_RowDeletedName="Data1RowDeleted" msprop:Generator_TableClassName="Data1DataTable" msprop:Generator_RowChangedName="Data1RowChanged" msprop:Generator_RowClassName="Data1Row" msprop:Generator_RowChangingName="Data1RowChanging" msprop:Generator_RowEvArgName="Data1RowChangeEvent" msprop:Generator_RowEvHandlerName="Data1RowChangeEventHandler" msprop:Generator_TablePropName="Data1" msprop:Generator_TableVarName="tableData1" msprop:Generator_RowDeletingName="Data1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BarangID" msprop:Generator_UserColumnName="BarangID" msprop:Generator_ColumnPropNameInRow="BarangID" msprop:Generator_ColumnVarNameInTable="columnBarangID" msprop:Generator_ColumnPropNameInTable="BarangIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaStok" msprop:Generator_UserColumnName="NamaStok" msprop:Generator_ColumnPropNameInRow="NamaStok" msprop:Generator_ColumnVarNameInTable="columnNamaStok" msprop:Generator_ColumnPropNameInTable="NamaStokColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyYear1" msprop:Generator_UserColumnName="QtyYear1" msprop:Generator_ColumnPropNameInRow="QtyYear1" msprop:Generator_ColumnVarNameInTable="columnQtyYear1" msprop:Generator_ColumnPropNameInTable="QtyYear1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyYear2" msprop:Generator_UserColumnName="QtyYear2" msprop:Generator_ColumnPropNameInRow="QtyYear2" msprop:Generator_ColumnVarNameInTable="columnQtyYear2" msprop:Generator_ColumnPropNameInTable="QtyYear2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="NT" msprop:Generator_UserColumnName="NT" msprop:Generator_ColumnPropNameInRow="NT" msprop:Generator_ColumnVarNameInTable="columnNT" msprop:Generator_ColumnPropNameInTable="NTColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

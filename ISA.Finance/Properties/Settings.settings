@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ISA.Finance.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Courier New, 8.25pt</Value>
+    </Setting>
+    <Setting Name="OutputFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="SASdb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="DbName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISADBDepoFinance</Value>
+    </Setting>
+    <Setting Name="DbHR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISAHR</Value>
+    </Setting>
+    <Setting Name="DBFDownload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Download</Value>
+    </Setting>
+    <Setting Name="DBFUpload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Upload</Value>
+    </Setting>
+    <Setting Name="LMin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Min" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TActual" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DBF_HRD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Z:\ISAapp\karyawan</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

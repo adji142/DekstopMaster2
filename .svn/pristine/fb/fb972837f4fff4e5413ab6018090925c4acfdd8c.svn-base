@@ -1,0 +1,8 @@
+﻿USE ISAFinance_JKT
+GO
+
+DELETE FROM DBO.GiroTolak 
+WHERE RecordID NOT IN (SELECT RecordID FROM ISAFinance.DBO.GiroTolak)
+
+GO
+

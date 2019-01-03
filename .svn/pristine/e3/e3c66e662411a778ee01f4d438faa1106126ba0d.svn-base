@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLapPenjualanTAX" targetNamespace="http://tempuri.org/dsLapPenjualanTAX.xsd" xmlns:mstns="http://tempuri.org/dsLapPenjualanTAX.xsd" xmlns="http://tempuri.org/dsLapPenjualanTAX.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISADbXtdConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISADbXtdConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Trading.Properties.Settings.GlobalReference.Default.ISADbXtdConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLapPenjualanTAX" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLapPenjualanTAX" msprop:Generator_DataSetName="dsLapPenjualanTAX" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TglSuratJalan" msprop:Generator_UserColumnName="TglSuratJalan" msprop:Generator_ColumnPropNameInRow="TglSuratJalan" msprop:Generator_ColumnVarNameInTable="columnTglSuratJalan" msprop:Generator_ColumnPropNameInTable="TglSuratJalanColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NoSuratJalan" msprop:Generator_UserColumnName="NoSuratJalan" msprop:Generator_ColumnPropNameInRow="NoSuratJalan" msprop:Generator_ColumnVarNameInTable="columnNoSuratJalan" msprop:Generator_ColumnPropNameInTable="NoSuratJalanColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoFaktur" msprop:Generator_UserColumnName="NoFaktur" msprop:Generator_ColumnPropNameInRow="NoFaktur" msprop:Generator_ColumnVarNameInTable="columnNoFaktur" msprop:Generator_ColumnPropNameInTable="NoFakturColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nominal" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Nominal" msprop:Generator_ColumnPropNameInRow="Nominal" msprop:Generator_ColumnVarNameInTable="columnNominal" msprop:Generator_ColumnPropNameInTable="NominalColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Customer" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Customer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="31" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NPWP" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NPWP" msprop:Generator_ColumnPropNameInRow="NPWP" msprop:Generator_ColumnVarNameInTable="columnNPWP" msprop:Generator_ColumnPropNameInTable="NPWPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NominalTunai" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NominalTunai" msprop:Generator_ColumnPropNameInRow="NominalTunai" msprop:Generator_ColumnVarNameInTable="columnNominalTunai" msprop:Generator_ColumnPropNameInTable="NominalTunaiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PPNTunai" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PPNTunai" msprop:Generator_ColumnPropNameInRow="PPNTunai" msprop:Generator_ColumnVarNameInTable="columnPPNTunai" msprop:Generator_ColumnPropNameInTable="PPNTunaiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NominalKredit" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NominalKredit" msprop:Generator_ColumnPropNameInRow="NominalKredit" msprop:Generator_ColumnVarNameInTable="columnNominalKredit" msprop:Generator_ColumnPropNameInTable="NominalKreditColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PPNKredit" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PPNKredit" msprop:Generator_ColumnPropNameInRow="PPNKredit" msprop:Generator_ColumnVarNameInTable="columnPPNKredit" msprop:Generator_ColumnPropNameInTable="PPNKreditColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCustomerInti" targetNamespace="http://tempuri.org/dsCustomerInti.xsd" xmlns:mstns="http://tempuri.org/dsCustomerInti.xsd" xmlns="http://tempuri.org/dsCustomerInti.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCustomerInti" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCustomerInti" msprop:Generator_DataSetName="dsCustomerInti" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerInti" msprop:Generator_UserTableName="CustomerInti" msprop:Generator_RowDeletedName="CustomerIntiRowDeleted" msprop:Generator_RowChangedName="CustomerIntiRowChanged" msprop:Generator_RowClassName="CustomerIntiRow" msprop:Generator_RowChangingName="CustomerIntiRowChanging" msprop:Generator_RowEvArgName="CustomerIntiRowChangeEvent" msprop:Generator_RowEvHandlerName="CustomerIntiRowChangeEventHandler" msprop:Generator_TableClassName="CustomerIntiDataTable" msprop:Generator_TableVarName="tableCustomerInti" msprop:Generator_RowDeletingName="CustomerIntiRowDeleting" msprop:Generator_TablePropName="CustomerInti">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="namatoko" msprop:Generator_UserColumnName="namatoko" msprop:Generator_ColumnVarNameInTable="columnnamatoko" msprop:Generator_ColumnPropNameInRow="namatoko" msprop:Generator_ColumnPropNameInTable="namatokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alamat" msprop:Generator_UserColumnName="alamat" msprop:Generator_ColumnVarNameInTable="columnalamat" msprop:Generator_ColumnPropNameInRow="alamat" msprop:Generator_ColumnPropNameInTable="alamatColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kota" msprop:Generator_UserColumnName="kota" msprop:Generator_ColumnVarNameInTable="columnkota" msprop:Generator_ColumnPropNameInRow="kota" msprop:Generator_ColumnPropNameInTable="kotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="daerah" msprop:Generator_UserColumnName="daerah" msprop:Generator_ColumnVarNameInTable="columndaerah" msprop:Generator_ColumnPropNameInRow="daerah" msprop:Generator_ColumnPropNameInTable="daerahColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="propinsi" msprop:Generator_UserColumnName="propinsi" msprop:Generator_ColumnVarNameInTable="columnpropinsi" msprop:Generator_ColumnPropNameInRow="propinsi" msprop:Generator_ColumnPropNameInTable="propinsiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idwil" msprop:Generator_UserColumnName="idwil" msprop:Generator_ColumnVarNameInTable="columnidwil" msprop:Generator_ColumnPropNameInRow="idwil" msprop:Generator_ColumnPropNameInTable="idwilColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="notelp" msprop:Generator_UserColumnName="notelp" msprop:Generator_ColumnVarNameInTable="columnnotelp" msprop:Generator_ColumnPropNameInRow="notelp" msprop:Generator_ColumnPropNameInTable="notelpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="namap" msprop:Generator_UserColumnName="namap" msprop:Generator_ColumnPropNameInRow="namap" msprop:Generator_ColumnVarNameInTable="columnnamap" msprop:Generator_ColumnPropNameInTable="namapColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="jkp" msprop:Generator_UserColumnName="jkp" msprop:Generator_ColumnPropNameInRow="jkp" msprop:Generator_ColumnVarNameInTable="columnjkp" msprop:Generator_ColumnPropNameInTable="jkpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="notelpp" msprop:Generator_UserColumnName="notelpp" msprop:Generator_ColumnPropNameInRow="notelpp" msprop:Generator_ColumnVarNameInTable="columnnotelpp" msprop:Generator_ColumnPropNameInTable="notelppColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="nohpp" msprop:Generator_UserColumnName="nohpp" msprop:Generator_ColumnPropNameInRow="nohpp" msprop:Generator_ColumnVarNameInTable="columnnohpp" msprop:Generator_ColumnPropNameInTable="nohppColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

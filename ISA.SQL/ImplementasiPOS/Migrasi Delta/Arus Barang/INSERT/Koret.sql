@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+
+
+INSERT INTO DBO.Koret
+SELECT * FROM ISAdb.DBO.Koret WHERE ReturID NOT IN (SELECT ReturID FROM DBO.Koret)
+
+GO 

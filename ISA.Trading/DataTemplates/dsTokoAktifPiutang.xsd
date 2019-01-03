@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTokoAktifPiutang" targetNamespace="http://tempuri.org/dsTokoAktifPiutang.xsd" xmlns:mstns="http://tempuri.org/dsTokoAktifPiutang.xsd" xmlns="http://tempuri.org/dsTokoAktifPiutang.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTokoAktifPiutang" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsTokoAktifPiutang" msprop:Generator_UserDSName="dsTokoAktifPiutang" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TokoBronze" msprop:Generator_UserTableName="TokoBronze" msprop:Generator_RowDeletedName="TokoBronzeRowDeleted" msprop:Generator_TableClassName="TokoBronzeDataTable" msprop:Generator_RowChangedName="TokoBronzeRowChanged" msprop:Generator_RowClassName="TokoBronzeRow" msprop:Generator_RowChangingName="TokoBronzeRowChanging" msprop:Generator_RowEvArgName="TokoBronzeRowChangeEvent" msprop:Generator_RowEvHandlerName="TokoBronzeRowChangeEventHandler" msprop:Generator_TablePropName="TokoBronze" msprop:Generator_TableVarName="tableTokoBronze" msprop:Generator_RowDeletingName="TokoBronzeRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="A" msprop:Generator_UserColumnName="A" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInTable="AColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="B" msprop:Generator_UserColumnName="B" msprop:Generator_ColumnPropNameInRow="B" msprop:Generator_ColumnVarNameInTable="columnB" msprop:Generator_ColumnPropNameInTable="BColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="C" msprop:Generator_UserColumnName="C" msprop:Generator_ColumnPropNameInRow="C" msprop:Generator_ColumnVarNameInTable="columnC" msprop:Generator_ColumnPropNameInTable="CColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="D" msprop:Generator_UserColumnName="D" msprop:Generator_ColumnPropNameInRow="D" msprop:Generator_ColumnVarNameInTable="columnD" msprop:Generator_ColumnPropNameInTable="DColumn" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TokoSilver" msprop:Generator_UserTableName="TokoSilver" msprop:Generator_RowDeletedName="TokoSilverRowDeleted" msprop:Generator_TableClassName="TokoSilverDataTable" msprop:Generator_RowChangedName="TokoSilverRowChanged" msprop:Generator_RowClassName="TokoSilverRow" msprop:Generator_RowChangingName="TokoSilverRowChanging" msprop:Generator_RowEvArgName="TokoSilverRowChangeEvent" msprop:Generator_RowEvHandlerName="TokoSilverRowChangeEventHandler" msprop:Generator_TablePropName="TokoSilver" msprop:Generator_TableVarName="tableTokoSilver" msprop:Generator_RowDeletingName="TokoSilverRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="A" msdata:Caption="P1" msprop:Generator_UserColumnName="A" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInTable="AColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="B" msdata:Caption="P2" msprop:Generator_UserColumnName="B" msprop:Generator_ColumnPropNameInRow="B" msprop:Generator_ColumnVarNameInTable="columnB" msprop:Generator_ColumnPropNameInTable="BColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="C" msdata:Caption="P3" msprop:Generator_UserColumnName="C" msprop:Generator_ColumnPropNameInRow="C" msprop:Generator_ColumnVarNameInTable="columnC" msprop:Generator_ColumnPropNameInTable="CColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="D" msdata:Caption="P4" msprop:Generator_UserColumnName="D" msprop:Generator_ColumnPropNameInRow="D" msprop:Generator_ColumnVarNameInTable="columnD" msprop:Generator_ColumnPropNameInTable="DColumn" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TokoGold" msprop:Generator_UserTableName="TokoGold" msprop:Generator_RowDeletedName="TokoGoldRowDeleted" msprop:Generator_TableClassName="TokoGoldDataTable" msprop:Generator_RowChangedName="TokoGoldRowChanged" msprop:Generator_RowClassName="TokoGoldRow" msprop:Generator_RowChangingName="TokoGoldRowChanging" msprop:Generator_RowEvArgName="TokoGoldRowChangeEvent" msprop:Generator_RowEvHandlerName="TokoGoldRowChangeEventHandler" msprop:Generator_TablePropName="TokoGold" msprop:Generator_TableVarName="tableTokoGold" msprop:Generator_RowDeletingName="TokoGoldRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="A" msdata:Caption="P1" msprop:Generator_UserColumnName="A" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInTable="AColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="B" msdata:Caption="P2" msprop:Generator_UserColumnName="B" msprop:Generator_ColumnPropNameInRow="B" msprop:Generator_ColumnVarNameInTable="columnB" msprop:Generator_ColumnPropNameInTable="BColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="C" msdata:Caption="P3" msprop:Generator_UserColumnName="C" msprop:Generator_ColumnPropNameInRow="C" msprop:Generator_ColumnVarNameInTable="columnC" msprop:Generator_ColumnPropNameInTable="CColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="D" msdata:Caption="P4" msprop:Generator_UserColumnName="D" msprop:Generator_ColumnPropNameInRow="D" msprop:Generator_ColumnVarNameInTable="columnD" msprop:Generator_ColumnPropNameInTable="DColumn" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

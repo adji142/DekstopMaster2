@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBukti" targetNamespace="http://tempuri.org/dsBukti.xsd" xmlns:mstns="http://tempuri.org/dsBukti.xsd" xmlns="http://tempuri.org/dsBukti.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBukti" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBukti" msprop:Generator_DataSetName="dsBukti" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TglBukti" msprop:Generator_UserColumnName="TglBukti" msprop:Generator_ColumnPropNameInRow="TglBukti" msprop:Generator_ColumnVarNameInTable="columnTglBukti" msprop:Generator_ColumnPropNameInTable="TglBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Jumlah" msprop:Generator_UserColumnName="Jumlah" msprop:Generator_ColumnPropNameInRow="Jumlah" msprop:Generator_ColumnVarNameInTable="columnJumlah" msprop:Generator_ColumnPropNameInTable="JumlahColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoAcc" msprop:Generator_UserColumnName="NoAcc" msprop:Generator_ColumnPropNameInRow="NoAcc" msprop:Generator_ColumnVarNameInTable="columnNoAcc" msprop:Generator_ColumnPropNameInTable="NoAccColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+USE ISAFinance
+GO
+TRUNCATE TABLE dbo.InOut
+GO
+INSERT INTO dbo.InOut
+SELECT	NEWID(),
+		a.*
+FROM OPENROWSET('VFPOLEDB', 'C:\SAS_Database\'; ' '; ' ', 'SELECT * FROM InOut') a
+
+GO

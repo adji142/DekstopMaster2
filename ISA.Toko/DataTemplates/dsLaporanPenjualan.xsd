@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLaporanPenjualan" targetNamespace="http://tempuri.org/dsLaporanPenjualan.xsd" xmlns:mstns="http://tempuri.org/dsLaporanPenjualan.xsd" xmlns="http://tempuri.org/dsLaporanPenjualan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISADBDepoNonRetail_TokoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISADBDepoNonRetail_TokoConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Toko.Properties.Settings.GlobalReference.Default.ISADBDepoNonRetail_TokoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLaporanPenjualan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsLaporanPenjualan" msprop:Generator_UserDSName="dsLaporanPenjualan" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TablePropName="Data" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeRak" msprop:Generator_UserColumnName="KodeRak" msprop:Generator_ColumnPropNameInRow="KodeRak" msprop:Generator_ColumnVarNameInTable="columnKodeRak" msprop:Generator_ColumnPropNameInTable="KodeRakColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaStok" msprop:Generator_UserColumnName="NamaStok" msprop:Generator_ColumnPropNameInRow="NamaStok" msprop:Generator_ColumnVarNameInTable="columnNamaStok" msprop:Generator_ColumnPropNameInTable="NamaStokColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="73" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TglNota" msprop:Generator_UserColumnName="TglNota" msprop:Generator_ColumnPropNameInRow="TglNota" msprop:Generator_ColumnVarNameInTable="columnTglNota" msprop:Generator_ColumnPropNameInTable="TglNotaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NoNota" msprop:Generator_UserColumnName="NoNota" msprop:Generator_ColumnPropNameInRow="NoNota" msprop:Generator_ColumnVarNameInTable="columnNoNota" msprop:Generator_ColumnPropNameInTable="NoNotaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesID" msprop:Generator_UserColumnName="SalesID" msprop:Generator_ColumnPropNameInRow="SalesID" msprop:Generator_ColumnVarNameInTable="columnSalesID" msprop:Generator_ColumnPropNameInTable="SalesIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaSales" msprop:Generator_UserColumnName="NamaSales" msprop:Generator_ColumnPropNameInRow="NamaSales" msprop:Generator_ColumnVarNameInTable="columnNamaSales" msprop:Generator_ColumnPropNameInTable="NamaSalesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaToko" msprop:Generator_UserColumnName="NamaToko" msprop:Generator_ColumnPropNameInRow="NamaToko" msprop:Generator_ColumnVarNameInTable="columnNamaToko" msprop:Generator_ColumnPropNameInTable="NamaTokoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HargaJualNet" msdata:ReadOnly="true" msprop:Generator_UserColumnName="HargaJualNet" msprop:Generator_ColumnPropNameInRow="HargaJualNet" msprop:Generator_ColumnVarNameInTable="columnHargaJualNet" msprop:Generator_ColumnPropNameInTable="HargaJualNetColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyNota" msprop:Generator_UserColumnName="QtyNota" msprop:Generator_ColumnPropNameInRow="QtyNota" msprop:Generator_ColumnVarNameInTable="columnQtyNota" msprop:Generator_ColumnPropNameInTable="QtyNotaColumn" type="xs:int" />
+              <xs:element name="TotHargaJual" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TotHargaJual" msprop:Generator_ColumnPropNameInRow="TotHargaJual" msprop:Generator_ColumnVarNameInTable="columnTotHargaJual" msprop:Generator_ColumnPropNameInTable="TotHargaJualColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JenisBarang" msprop:Generator_UserColumnName="JenisBarang" msprop:Generator_ColumnPropNameInRow="JenisBarang" msprop:Generator_ColumnVarNameInTable="columnJenisBarang" msprop:Generator_ColumnPropNameInTable="JenisBarangColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

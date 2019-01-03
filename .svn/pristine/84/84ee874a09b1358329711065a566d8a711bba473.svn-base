@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.OpnameDetail3 
+WHERE RecordID NOT IN (SELECT RecordID FROM ISAdb.DBO.OpnameDetail3)
+
+
+GO 

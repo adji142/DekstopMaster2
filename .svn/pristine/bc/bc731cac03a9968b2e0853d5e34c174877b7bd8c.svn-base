@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9711BC2D-5FDC-4290-97F1-471E359FC8CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISA.Bengkel</RootNamespace>
+    <AssemblyName>ISA.Bengkel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=3.0.0.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\MIKO\ISA.Retail.Depo_Baru\ISA Retail Depo\ISA.AutoSynch\bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BuildString1.cs" />
+    <Compile Include="Class\Error.cs" />
+    <Compile Include="Class\GlobalVar.cs" />
+    <Compile Include="Class\RawPrinterHelper.cs" />
+    <Compile Include="Class\SecurityManager.cs" />
+    <Compile Include="Class\Utility.StrMaker.cs" />
+    <Compile Include="DataTemplates\dsCetakNotaBengkel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCetakNotaBengkel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsLaporanBengkel.cs">
+      <DependentUpon>dsLaporanBengkel.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTemplates\dsLaporanBengkel.Designer.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResetLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetLogin.Designer.cs">
+      <DependentUpon>frmResetLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AppSetting.cs" />
+    <Compile Include="Helper\Error.cs" />
+    <Compile Include="Helper\GlobalVar.cs" />
+    <Compile Include="Helper\Messages.cs" />
+    <Compile Include="Helper\SecurityManager.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Tools.cs" />
+    <Compile Include="Laporan\frmLaporanRekapBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanRekapBengkel.Designer.cs">
+      <DependentUpon>frmLaporanRekapBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptLaporanBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptLaporanBengkel.Designer.cs">
+      <DependentUpon>frmRptLaporanBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptOrderPembelianBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptOrderPembelianBarang.Designer.cs">
+      <DependentUpon>frmRptOrderPembelianBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptPembelianBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptPembelianBengkel.Designer.cs">
+      <DependentUpon>frmRptPembelianBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptPembelianBengkelRekap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptPembelianBengkelRekap.Designer.cs">
+      <DependentUpon>frmRptPembelianBengkelRekap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptRekapNotaBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptRekapNotaBengkel.Designer.cs">
+      <DependentUpon>frmRptRekapNotaBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmRptServiceBengkelDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmRptServiceBengkelDetail.Designer.cs">
+      <DependentUpon>frmRptServiceBengkelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ServiceBengkel.cs" />
+    <Compile Include="Lookup\Controls\LookUpCustomerALL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookUpCustomerALL.Designer.cs">
+      <DependentUpon>LookUpCustomerALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomerBengkel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomerBengkel.designer.cs">
+      <DependentUpon>LookupCustomerBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupBarang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupBarang.designer.cs">
+      <DependentUpon>LookupBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomer.designer.cs">
+      <DependentUpon>LookupCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomerMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupCustomerMotor.designer.cs">
+      <DependentUpon>LookupCustomerMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupMekanik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupMekanik.designer.cs">
+      <DependentUpon>LookupMekanik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupSales.designer.cs">
+      <DependentUpon>LookupSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupSepedaMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupSepedaMotor.designer.cs">
+      <DependentUpon>LookupSepedaMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupStokBkl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupStokBkl.Designer.cs" />
+    <Compile Include="Lookup\Controls\LookupSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lookup\Controls\LookupSupplier.Designer.cs" />
+    <Compile Include="Lookup\FormData\frmBarangLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmBarangLookup.designer.cs">
+      <DependentUpon>frmBarangLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerALLLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerALLLookup.Designer.cs">
+      <DependentUpon>frmCustomerALLLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerLookup.designer.cs">
+      <DependentUpon>frmCustomerLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerMotorLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmCustomerMotorLookup.designer.cs">
+      <DependentUpon>frmCustomerMotorLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmMekanikLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmMekanikLookup.designer.cs">
+      <DependentUpon>frmMekanikLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSalesLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSalesLookup.designer.cs">
+      <DependentUpon>frmSalesLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSepedaMotorLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSepedaMotorLookup.designer.cs">
+      <DependentUpon>frmSepedaMotorLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmStokBklLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmStokBklLookup.designer.cs">
+      <DependentUpon>frmStokBklLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSupplierLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\FormData\frmSupplierLookup.Designer.cs" />
+    <Compile Include="Master\frmCustMemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustMemberUpdate.Designer.cs">
+      <DependentUpon>frmCustMemberUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCustMotorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustMotorUpdate.Designer.cs">
+      <DependentUpon>frmCustMotorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCustomerBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustomerBrowse.Designer.cs">
+      <DependentUpon>frmCustomerBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCustomerFilterBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustomerFilterBrowse.Designer.cs">
+      <DependentUpon>frmCustomerFilterBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCustomerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCustomerUpdate.Designer.cs">
+      <DependentUpon>frmCustomerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMasterStokBengkelBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMasterStokBengkelBrowse.Designer.cs">
+      <DependentUpon>frmMasterStokBengkelBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMasterStokBengkelUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMasterStokBengkelUpdate.Designer.cs">
+      <DependentUpon>frmMasterStokBengkelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMekanikUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMekanikUpdate.Designer.cs">
+      <DependentUpon>frmMekanikUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMotorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMotorBrowse.Designer.cs">
+      <DependentUpon>frmMotorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMotorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMotorUpdate.Designer.cs">
+      <DependentUpon>frmMotorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMekanikBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMekanikBrowse.Designer.cs">
+      <DependentUpon>frmMekanikBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStandarBiayaServiceBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStandarBiayaServiceBrowse.Designer.cs">
+      <DependentUpon>frmStandarBiayaServiceBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStandarBiayaServiceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStandarBiayaServiceUpdate.Designer.cs">
+      <DependentUpon>frmStandarBiayaServiceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStandarServiceBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStandarServiceBrowse.Designer.cs" />
+    <Compile Include="Master\frmStandarServiceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStandarServiceUpdate.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetLogin.resx">
+      <DependentUpon>frmResetLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLaporanRekapBengkel.resx">
+      <DependentUpon>frmLaporanRekapBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptLaporanBengkel.resx">
+      <DependentUpon>frmRptLaporanBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptOrderPembelianBarang.resx">
+      <DependentUpon>frmRptOrderPembelianBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptPembelianBengkel.resx">
+      <DependentUpon>frmRptPembelianBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptPembelianBengkelRekap.resx">
+      <DependentUpon>frmRptPembelianBengkelRekap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptRekapNotaBengkel.resx">
+      <DependentUpon>frmRptRekapNotaBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmRptServiceBengkelDetail.resx">
+      <DependentUpon>frmRptServiceBengkelDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptCetakFormOrder.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakFormOrder_copy1.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakFormOrder_copy2.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaru.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaruPS.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaruPS_Copy1.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaruPS_Copy2.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaru_copy1.rdlc" />
+    <EmbeddedResource Include="Laporan\rptCetakNotaBengkelbaru_copy2.rdlc" />
+    <EmbeddedResource Include="Laporan\RptLaporanBengkel.rdlc" />
+    <EmbeddedResource Include="Lookup\Controls\LookUpCustomerALL.resx">
+      <DependentUpon>LookUpCustomerALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupCustomerBengkel.resx">
+      <DependentUpon>LookupCustomerBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupBarang.resx">
+      <DependentUpon>LookupBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupCustomer.resx">
+      <DependentUpon>LookupCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupCustomerMotor.resx">
+      <DependentUpon>LookupCustomerMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupMekanik.resx">
+      <DependentUpon>LookupMekanik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupSales.resx">
+      <DependentUpon>LookupSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupSepedaMotor.resx">
+      <DependentUpon>LookupSepedaMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\Controls\LookupStokBkl.resx" />
+    <EmbeddedResource Include="Lookup\Controls\LookupSupplier.resx" />
+    <EmbeddedResource Include="Lookup\FormData\frmBarangLookup.resx">
+      <DependentUpon>frmBarangLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmCustomerALLLookup.resx">
+      <DependentUpon>frmCustomerALLLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmCustomerLookup.resx">
+      <DependentUpon>frmCustomerLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmCustomerMotorLookup.resx">
+      <DependentUpon>frmCustomerMotorLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmMekanikLookup.resx">
+      <DependentUpon>frmMekanikLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmSalesLookup.resx">
+      <DependentUpon>frmSalesLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmSepedaMotorLookup.resx">
+      <DependentUpon>frmSepedaMotorLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmStokBklLookup.resx">
+      <DependentUpon>frmStokBklLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\FormData\frmSupplierLookup.resx" />
+    <EmbeddedResource Include="Master\frmCustMemberUpdate.resx">
+      <DependentUpon>frmCustMemberUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCustMotorUpdate.resx">
+      <DependentUpon>frmCustMotorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCustomerBrowse.resx">
+      <DependentUpon>frmCustomerBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCustomerFilterBrowse.resx">
+      <DependentUpon>frmCustomerFilterBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCustomerUpdate.resx">
+      <DependentUpon>frmCustomerUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMasterStokBengkelBrowse.resx">
+      <DependentUpon>frmMasterStokBengkelBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMasterStokBengkelUpdate.resx">
+      <DependentUpon>frmMasterStokBengkelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMekanikUpdate.resx">
+      <DependentUpon>frmMekanikUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMotorBrowse.resx">
+      <DependentUpon>frmMotorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMotorUpdate.resx">
+      <DependentUpon>frmMotorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMekanikBrowse.resx">
+      <DependentUpon>frmMekanikBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStandarBiayaServiceBrowse.resx">
+      <DependentUpon>frmStandarBiayaServiceBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStandarBiayaServiceUpdate.resx">
+      <DependentUpon>frmStandarBiayaServiceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStandarServiceBrowse.resx" />
+    <EmbeddedResource Include="Master\frmStandarServiceUpdate.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmLookupPemasok.resx">
+      <DependentUpon>frmLookupPemasok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmLookupSPM.resx">
+      <DependentUpon>frmLookupSPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmPembelianBengkel.resx">
+      <DependentUpon>frmPembelianBengkel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmPembelianBrowser.resx">
+      <DependentUpon>frmPembelianBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmPembelianDetailUpdate.resx">
+      <DependentUpon>frmPembelianDetailUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmPembelianUpdate.resx">
+      <DependentUpon>frmPembelianUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceBrowser.resx">
+      <DependentUpon>frmServiceBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceDetailPosUpdate.resx">
+      <DependentUpon>frmServiceDetailPosUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceDetailUpdate.resx">
+      <DependentUpon>frmServiceDetailUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceJualUpdate.resx">
+      <DependentUpon>frmServiceJualUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceTransjUpdate.resx">
+      <DependentUpon>frmServiceTransjUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaksi\frmServiceUpdate.resx">
+      <DependentUpon>frmServiceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataTemplates\dsCetakNotaBengkel.xsc">
+      <DependentUpon>dsCetakNotaBengkel.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsCetakNotaBengkel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCetakNotaBengkel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataTemplates\dsCetakNotaBengkel.xss">
+      <DependentUpon>dsCetakNotaBengkel.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsLaporanBengkel.xsc">
+      <DependentUpon>dsLaporanBengkel.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsLaporanBengkel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLaporanBengkel1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataTemplates\dsLaporanBengkel.xss">
+      <DependentUpon>dsLaporanBengkel.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\desktop %281%29.ini" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transaksi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmLookupPemasok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmLookupPemasok.Designer.cs">
+      <DependentUpon>frmLookupPemasok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmLookupSPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmLookupSPM.Designer.cs">
+      <DependentUpon>frmLookupSPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianBengkel.Designer.cs">
+      <DependentUpon>frmPembelianBengkel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianBrowser.designer.cs">
+      <DependentUpon>frmPembelianBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianDetailUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianDetailUpdate.designer.cs">
+      <DependentUpon>frmPembelianDetailUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmPembelianUpdate.designer.cs">
+      <DependentUpon>frmPembelianUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceBrowser.designer.cs">
+      <DependentUpon>frmServiceBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceDetailPosUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceDetailPosUpdate.Designer.cs">
+      <DependentUpon>frmServiceDetailPosUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceDetailUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceDetailUpdate.designer.cs">
+      <DependentUpon>frmServiceDetailUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceJualUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceJualUpdate.designer.cs">
+      <DependentUpon>frmServiceJualUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceTransjUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceTransjUpdate.designer.cs">
+      <DependentUpon>frmServiceTransjUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\frmServiceUpdate.designer.cs">
+      <DependentUpon>frmServiceUpdate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISA.Bengkel.Library\ISA.Bengkel.Library.csproj">
+      <Project>{26D3C072-C368-4779-9658-1DCE68D8B977}</Project>
+      <Name>ISA.Bengkel.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.Common\ISA.Common.csproj">
+      <Project>{2B1F016A-F913-44DB-931E-2BB121096A08}</Project>
+      <Name>ISA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.Controls\ISA.Controls.csproj">
+      <Project>{C7C9CD09-7C62-453D-AB18-DF5EBE0EE25F}</Project>
+      <Name>ISA.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.DAL\ISA.DAL.csproj">
+      <Project>{D32C7E7B-EE9F-4324-A5E5-D5B008A3F589}</Project>
+      <Name>ISA.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.Trading\ISA.Trading.csproj">
+      <Project>{1FAB8589-1654-49D2-9123-6E19C8A6EB27}</Project>
+      <Name>ISA.Trading</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Add32.png" />
+    <Content Include="Resources\Cancel32.png" />
+    <Content Include="Resources\Close32.png" />
+    <Content Include="Resources\Delete32.png" />
+    <Content Include="Resources\Download32.png" />
+    <Content Include="Resources\Edit32.png" />
+    <Content Include="Resources\help-about.png" />
+    <Content Include="Resources\help.ico" />
+    <Content Include="Resources\Important32.png" />
+    <Content Include="Resources\Key32.png" />
+    <Content Include="Resources\LockKey32.png" />
+    <Content Include="Resources\Logo32.png" />
+    <Content Include="Resources\Ok32.png" />
+    <Content Include="Resources\Printer32.png" />
+    <Content Include="Resources\Save32.png" />
+    <Content Include="Resources\Search16.png" />
+    <Content Include="Resources\Search24.png" />
+    <Content Include="Resources\Search32.png" />
+    <Content Include="Resources\Upload32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

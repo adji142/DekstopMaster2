@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+
+
+INSERT INTO DBO.Peminjaman
+SELECT * FROM ISAdb.DBO.Peminjaman WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Peminjaman)
+
+GO 

@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.BarangBonus
+WHERE TrID NOT IN (SELECT TrID FROM ISAdb.DBO.BarangBonus)
+
+
+GO 

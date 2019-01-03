@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsToko" targetNamespace="http://tempuri.org/dsToko.xsd" xmlns:mstns="http://tempuri.org/dsToko.xsd" xmlns="http://tempuri.org/dsToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsToko" msprop:Generator_DataSetName="dsToko" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Toko" msprop:Generator_UserTableName="Toko" msprop:Generator_RowDeletedName="TokoRowDeleted" msprop:Generator_RowChangedName="TokoRowChanged" msprop:Generator_RowClassName="TokoRow" msprop:Generator_RowChangingName="TokoRowChanging" msprop:Generator_RowEvArgName="TokoRowChangeEvent" msprop:Generator_RowEvHandlerName="TokoRowChangeEventHandler" msprop:Generator_TableClassName="TokoDataTable" msprop:Generator_TableVarName="tableToko" msprop:Generator_RowDeletingName="TokoRowDeleting" msprop:Generator_TablePropName="Toko">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaToko" msprop:Generator_UserColumnName="NamaToko" msprop:Generator_ColumnVarNameInTable="columnNamaToko" msprop:Generator_ColumnPropNameInRow="NamaToko" msprop:Generator_ColumnPropNameInTable="NamaTokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WilID" msprop:Generator_UserColumnName="WilID" msprop:Generator_ColumnVarNameInTable="columnWilID" msprop:Generator_ColumnPropNameInRow="WilID" msprop:Generator_ColumnPropNameInTable="WilIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Kota" msprop:Generator_UserColumnName="Kota" msprop:Generator_ColumnVarNameInTable="columnKota" msprop:Generator_ColumnPropNameInRow="Kota" msprop:Generator_ColumnPropNameInTable="KotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Daerah" msprop:Generator_UserColumnName="Daerah" msprop:Generator_ColumnVarNameInTable="columnDaerah" msprop:Generator_ColumnPropNameInRow="Daerah" msprop:Generator_ColumnPropNameInTable="DaerahColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KLP" msprop:Generator_UserTableName="KLP" msprop:Generator_RowDeletedName="KLPRowDeleted" msprop:Generator_RowChangedName="KLPRowChanged" msprop:Generator_RowClassName="KLPRow" msprop:Generator_RowChangingName="KLPRowChanging" msprop:Generator_RowEvArgName="KLPRowChangeEvent" msprop:Generator_RowEvHandlerName="KLPRowChangeEventHandler" msprop:Generator_TableClassName="KLPDataTable" msprop:Generator_TableVarName="tableKLP" msprop:Generator_RowDeletingName="KLPRowDeleting" msprop:Generator_TablePropName="KLP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Bulan" msprop:Generator_UserColumnName="Bulan" msprop:Generator_ColumnVarNameInTable="columnBulan" msprop:Generator_ColumnPropNameInRow="Bulan" msprop:Generator_ColumnPropNameInTable="BulanColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FB2" msprop:Generator_UserColumnName="FB2" msprop:Generator_ColumnVarNameInTable="columnFB2" msprop:Generator_ColumnPropNameInRow="FB2" msprop:Generator_ColumnPropNameInTable="FB2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FB2.Omset" msprop:Generator_UserColumnName="FB2.Omset" msprop:Generator_ColumnVarNameInTable="_columnFB2_Omset" msprop:Generator_ColumnPropNameInRow="_FB2_Omset" msprop:Generator_ColumnPropNameInTable="_FB2_OmsetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FB2.HPP" msdata:Caption="FB2.Omset" msprop:Generator_UserColumnName="FB2.HPP" msprop:Generator_ColumnVarNameInTable="_columnFB2_HPP" msprop:Generator_ColumnPropNameInRow="_FB2_HPP" msprop:Generator_ColumnPropNameInTable="_FB2_HPPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FB4" msprop:Generator_UserColumnName="FB4" msprop:Generator_ColumnVarNameInTable="columnFB4" msprop:Generator_ColumnPropNameInRow="FB4" msprop:Generator_ColumnPropNameInTable="FB4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FB4.Omset" msdata:Caption="FB4" msprop:Generator_UserColumnName="FB4.Omset" msprop:Generator_ColumnVarNameInTable="_columnFB4_Omset" msprop:Generator_ColumnPropNameInRow="_FB4_Omset" msprop:Generator_ColumnPropNameInTable="_FB4_OmsetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FB4.HPP" msprop:Generator_UserColumnName="FB4.HPP" msprop:Generator_ColumnVarNameInTable="_columnFB4_HPP" msprop:Generator_ColumnPropNameInRow="_FB4_HPP" msprop:Generator_ColumnPropNameInTable="_FB4_HPPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FE2" msprop:Generator_UserColumnName="FE2" msprop:Generator_ColumnVarNameInTable="columnFE2" msprop:Generator_ColumnPropNameInRow="FE2" msprop:Generator_ColumnPropNameInTable="FE2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FE2.Omset" msprop:Generator_UserColumnName="FE2.Omset" msprop:Generator_ColumnVarNameInTable="_columnFE2_Omset" msprop:Generator_ColumnPropNameInRow="_FE2_Omset" msprop:Generator_ColumnPropNameInTable="_FE2_OmsetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FE2.HPP" msprop:Generator_UserColumnName="FE2.HPP" msprop:Generator_ColumnVarNameInTable="_columnFE2_HPP" msprop:Generator_ColumnPropNameInRow="_FE2_HPP" msprop:Generator_ColumnPropNameInTable="_FE2_HPPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FE4" msprop:Generator_UserColumnName="FE4" msprop:Generator_ColumnVarNameInTable="columnFE4" msprop:Generator_ColumnPropNameInRow="FE4" msprop:Generator_ColumnPropNameInTable="FE4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="FE4.Omset" msdata:Caption="FE4" msprop:Generator_UserColumnName="FE4.Omset" msprop:Generator_ColumnVarNameInTable="_columnFE4_Omset" msprop:Generator_ColumnPropNameInRow="_FE4_Omset" msprop:Generator_ColumnPropNameInTable="_FE4_OmsetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FE4.HPP" msprop:Generator_UserColumnName="FE4.HPP" msprop:Generator_ColumnVarNameInTable="_columnFE4_HPP" msprop:Generator_ColumnPropNameInRow="_FE4_HPP" msprop:Generator_ColumnPropNameInTable="_FE4_HPPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lainya" msprop:Generator_UserColumnName="Lainya" msprop:Generator_ColumnVarNameInTable="columnLainya" msprop:Generator_ColumnPropNameInRow="Lainya" msprop:Generator_ColumnPropNameInTable="LainyaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lainya.Omset" msdata:Caption="Lainya" msprop:Generator_UserColumnName="Lainya.Omset" msprop:Generator_ColumnVarNameInTable="_columnLainya_Omset" msprop:Generator_ColumnPropNameInRow="_Lainya_Omset" msprop:Generator_ColumnPropNameInTable="_Lainya_OmsetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lainya.HPP" msprop:Generator_UserColumnName="Lainya.HPP" msprop:Generator_ColumnVarNameInTable="_columnLainya_HPP" msprop:Generator_ColumnPropNameInRow="_Lainya_HPP" msprop:Generator_ColumnPropNameInTable="_Lainya_HPPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Piutang" msprop:Generator_UserTableName="Piutang" msprop:Generator_RowDeletedName="PiutangRowDeleted" msprop:Generator_TableClassName="PiutangDataTable" msprop:Generator_RowChangedName="PiutangRowChanged" msprop:Generator_RowClassName="PiutangRow" msprop:Generator_RowChangingName="PiutangRowChanging" msprop:Generator_RowEvArgName="PiutangRowChangeEvent" msprop:Generator_RowEvHandlerName="PiutangRowChangeEventHandler" msprop:Generator_TablePropName="Piutang" msprop:Generator_TableVarName="tablePiutang" msprop:Generator_RowDeletingName="PiutangRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_UserColumnName="KodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="A" msprop:Generator_UserColumnName="A" msprop:Generator_ColumnPropNameInRow="A" msprop:Generator_ColumnVarNameInTable="columnA" msprop:Generator_ColumnPropNameInTable="AColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="B" msprop:Generator_UserColumnName="B" msprop:Generator_ColumnPropNameInRow="B" msprop:Generator_ColumnVarNameInTable="columnB" msprop:Generator_ColumnPropNameInTable="BColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="C" msprop:Generator_UserColumnName="C" msprop:Generator_ColumnPropNameInRow="C" msprop:Generator_ColumnVarNameInTable="columnC" msprop:Generator_ColumnPropNameInTable="CColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

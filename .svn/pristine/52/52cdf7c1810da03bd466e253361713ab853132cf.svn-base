@@ -1,0 +1,7 @@
+﻿ USE ISAFinance_JKT
+GO
+
+DELETE FROM DBO.ClosingGL 
+
+GO
+

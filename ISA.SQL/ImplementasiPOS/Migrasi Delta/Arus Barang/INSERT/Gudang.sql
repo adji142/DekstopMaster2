@@ -1,0 +1,8 @@
+﻿USE ISAdb_JKT
+GO
+
+
+INSERT INTO DBO.Gudang
+SELECT * FROM ISAdb.DBO.Gudang WHERE GudangID NOT IN (SELECT GudangID FROM DBO.Gudang)
+
+GO 

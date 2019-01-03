@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+
+
+INSERT INTO DBO.OrderPenjualan
+SELECT * FROM ISAdb.DBO.OrderPenjualan WHERE HtrID NOT IN (SELECT HtrID FROM DBO.OrderPenjualan)
+
+GO 

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsKonsolidasi" targetNamespace="http://tempuri.org/dsKonsolidasi.xsd" xmlns:mstns="http://tempuri.org/dsKonsolidasi.xsd" xmlns="http://tempuri.org/dsKonsolidasi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsKonsolidasi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsKonsolidasi" msprop:Generator_DataSetName="dsKonsolidasi" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GitNota" msprop:Generator_UserTableName="GitNota" msprop:Generator_RowDeletedName="GitNotaRowDeleted" msprop:Generator_RowChangedName="GitNotaRowChanged" msprop:Generator_RowClassName="GitNotaRow" msprop:Generator_RowChangingName="GitNotaRowChanging" msprop:Generator_RowEvArgName="GitNotaRowChangeEvent" msprop:Generator_RowEvHandlerName="GitNotaRowChangeEventHandler" msprop:Generator_TableClassName="GitNotaDataTable" msprop:Generator_TableVarName="tableGitNota" msprop:Generator_RowDeletingName="GitNotaRowDeleting" msprop:Generator_TablePropName="GitNota">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CabangID" msprop:Generator_UserColumnName="CabangID" msprop:Generator_ColumnVarNameInTable="columnCabangID" msprop:Generator_ColumnPropNameInRow="CabangID" msprop:Generator_ColumnPropNameInTable="CabangIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JumlahRecord" msprop:Generator_UserColumnName="JumlahRecord" msprop:Generator_ColumnVarNameInTable="columnJumlahRecord" msprop:Generator_ColumnPropNameInRow="JumlahRecord" msprop:Generator_ColumnPropNameInTable="JumlahRecordColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NomNota" msprop:Generator_UserColumnName="NomNota" msprop:Generator_ColumnVarNameInTable="columnNomNota" msprop:Generator_ColumnPropNameInRow="NomNota" msprop:Generator_ColumnPropNameInTable="NomNotaColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Average" msprop:Generator_UserColumnName="Average" msprop:Generator_ColumnVarNameInTable="columnAverage" msprop:Generator_ColumnPropNameInRow="Average" msprop:Generator_ColumnPropNameInTable="AverageColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="GitMax" msprop:Generator_UserColumnName="GitMax" msprop:Generator_ColumnVarNameInTable="columnGitMax" msprop:Generator_ColumnPropNameInRow="GitMax" msprop:Generator_ColumnPropNameInTable="GitMaxColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GitAntarGudang" msprop:Generator_UserTableName="GitAntarGudang" msprop:Generator_RowDeletedName="GitAntarGudangRowDeleted" msprop:Generator_RowChangedName="GitAntarGudangRowChanged" msprop:Generator_RowClassName="GitAntarGudangRow" msprop:Generator_RowChangingName="GitAntarGudangRowChanging" msprop:Generator_RowEvArgName="GitAntarGudangRowChangeEvent" msprop:Generator_RowEvHandlerName="GitAntarGudangRowChangeEventHandler" msprop:Generator_TableClassName="GitAntarGudangDataTable" msprop:Generator_TableVarName="tableGitAntarGudang" msprop:Generator_RowDeletingName="GitAntarGudangRowDeleting" msprop:Generator_TablePropName="GitAntarGudang">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeGudang" msprop:Generator_UserColumnName="KodeGudang" msprop:Generator_ColumnVarNameInTable="columnKodeGudang" msprop:Generator_ColumnPropNameInRow="KodeGudang" msprop:Generator_ColumnPropNameInTable="KodeGudangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JmlRecords" msprop:Generator_UserColumnName="JmlRecords" msprop:Generator_ColumnVarNameInTable="columnJmlRecords" msprop:Generator_ColumnPropNameInRow="JmlRecords" msprop:Generator_ColumnPropNameInTable="JmlRecordsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TtlNominal" msprop:Generator_UserColumnName="TtlNominal" msprop:Generator_ColumnVarNameInTable="columnTtlNominal" msprop:Generator_ColumnPropNameInRow="TtlNominal" msprop:Generator_ColumnPropNameInTable="TtlNominalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MaxGIT" msprop:Generator_UserColumnName="MaxGIT" msprop:Generator_ColumnVarNameInTable="columnMaxGIT" msprop:Generator_ColumnPropNameInRow="MaxGIT" msprop:Generator_ColumnPropNameInTable="MaxGITColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AvgGIT" msprop:Generator_UserColumnName="AvgGIT" msprop:Generator_ColumnVarNameInTable="columnAvgGIT" msprop:Generator_ColumnPropNameInRow="AvgGIT" msprop:Generator_ColumnPropNameInTable="AvgGITColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BonSementara" msprop:Generator_UserTableName="BonSementara" msprop:Generator_RowDeletedName="BonSementaraRowDeleted" msprop:Generator_RowChangedName="BonSementaraRowChanged" msprop:Generator_RowClassName="BonSementaraRow" msprop:Generator_RowChangingName="BonSementaraRowChanging" msprop:Generator_RowEvArgName="BonSementaraRowChangeEvent" msprop:Generator_RowEvHandlerName="BonSementaraRowChangeEventHandler" msprop:Generator_TableClassName="BonSementaraDataTable" msprop:Generator_TableVarName="tableBonSementara" msprop:Generator_RowDeletingName="BonSementaraRowDeleting" msprop:Generator_TablePropName="BonSementara">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeGudang" msprop:Generator_UserColumnName="KodeGudang" msprop:Generator_ColumnVarNameInTable="columnKodeGudang" msprop:Generator_ColumnPropNameInRow="KodeGudang" msprop:Generator_ColumnPropNameInTable="KodeGudangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="JmlRecords" msprop:Generator_UserColumnName="JmlRecords" msprop:Generator_ColumnVarNameInTable="columnJmlRecords" msprop:Generator_ColumnPropNameInRow="JmlRecords" msprop:Generator_ColumnPropNameInTable="JmlRecordsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TtlNominal" msprop:Generator_UserColumnName="TtlNominal" msprop:Generator_ColumnVarNameInTable="columnTtlNominal" msprop:Generator_ColumnPropNameInRow="TtlNominal" msprop:Generator_ColumnPropNameInTable="TtlNominalColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AvgBS" msprop:Generator_UserColumnName="AvgBS" msprop:Generator_ColumnVarNameInTable="columnAvgBS" msprop:Generator_ColumnPropNameInRow="AvgBS" msprop:Generator_ColumnPropNameInTable="AvgBSColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MaxBS" msprop:Generator_UserColumnName="MaxBS" msprop:Generator_ColumnVarNameInTable="columnMaxBS" msprop:Generator_ColumnPropNameInRow="MaxBS" msprop:Generator_ColumnPropNameInTable="MaxBSColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KasOpname" msprop:Generator_UserTableName="KasOpname" msprop:Generator_RowDeletedName="KasOpnameRowDeleted" msprop:Generator_TableClassName="KasOpnameDataTable" msprop:Generator_RowChangedName="KasOpnameRowChanged" msprop:Generator_RowClassName="KasOpnameRow" msprop:Generator_RowChangingName="KasOpnameRowChanging" msprop:Generator_RowEvArgName="KasOpnameRowChangeEvent" msprop:Generator_RowEvHandlerName="KasOpnameRowChangeEventHandler" msprop:Generator_TablePropName="KasOpname" msprop:Generator_TableVarName="tableKasOpname" msprop:Generator_RowDeletingName="KasOpnameRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeGudang" msprop:Generator_UserColumnName="KodeGudang" msprop:Generator_ColumnPropNameInRow="KodeGudang" msprop:Generator_ColumnVarNameInTable="columnKodeGudang" msprop:Generator_ColumnPropNameInTable="KodeGudangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Tanggal" msprop:Generator_UserColumnName="Tanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KasTunai" msprop:Generator_UserColumnName="KasTunai" msprop:Generator_ColumnPropNameInRow="KasTunai" msprop:Generator_ColumnVarNameInTable="columnKasTunai" msprop:Generator_ColumnPropNameInTable="KasTunaiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KasLemBGC" msprop:Generator_UserColumnName="KasLemBGC" msprop:Generator_ColumnPropNameInRow="KasLemBGC" msprop:Generator_ColumnVarNameInTable="columnKasLemBGC" msprop:Generator_ColumnPropNameInTable="KasLemBGCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KasNomBGC" msprop:Generator_UserColumnName="KasNomBGC" msprop:Generator_ColumnPropNameInRow="KasNomBGC" msprop:Generator_ColumnVarNameInTable="columnKasNomBGC" msprop:Generator_ColumnPropNameInTable="KasNomBGCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OpnTunai" msprop:Generator_UserColumnName="OpnTunai" msprop:Generator_ColumnPropNameInRow="OpnTunai" msprop:Generator_ColumnVarNameInTable="columnOpnTunai" msprop:Generator_ColumnPropNameInTable="OpnTunaiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OpnLemBGC" msprop:Generator_UserColumnName="OpnLemBGC" msprop:Generator_ColumnPropNameInRow="OpnLemBGC" msprop:Generator_ColumnVarNameInTable="columnOpnLemBGC" msprop:Generator_ColumnPropNameInTable="OpnLemBGCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OpnNomBGC" msprop:Generator_UserColumnName="OpnNomBGC" msprop:Generator_ColumnPropNameInRow="OpnNomBGC" msprop:Generator_ColumnVarNameInTable="columnOpnNomBGC" msprop:Generator_ColumnPropNameInTable="OpnNomBGCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

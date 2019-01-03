@@ -1,0 +1,7 @@
+﻿USE ISAdb_JKT
+GO
+
+INSERT INTO DBO.Tagih
+SELECT * FROM ISAdb.DBO.Tagih WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Tagih)
+
+GO  

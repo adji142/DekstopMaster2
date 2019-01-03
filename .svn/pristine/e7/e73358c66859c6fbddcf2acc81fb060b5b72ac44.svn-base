@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!--<row id="ISAdb" user="ðÌ" pwd="êÌððøèîÒ" datasource="°ÒÎ" host="JKTDEV" default="1"/>
+  <row id="ISAFinance" user="ðÌ" pwd="êÌððøèîÒ" datasource="°ÜæÌæÐÔ" host="JKTDEV" default="0"/>
+  <row id="ISAHR" user="ðÌ" pwd="êÌððøèîÒ" datasource="°®" host="JKTDEV" default="0"/>-->
+
+  <!-- Database Palur - Dev Environment 
+  <row id="ISAdb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°j|jl" host="192.168.0.250,2802" default="1"/>
+  <row id="ISAFinance" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔj|jl" host="192.168.0.250,2802" default="0"/>
+  <row id="ISAHR" user="ðÌ" pwd="ÒèòæÔòl" datasource="°®j|jl" host="192.168.0.250,2802" default="0"/>
+-->
+  <!-- untuk depo -->-->
+  <row id="ISADBDepoNonRetail" user="ðÌ" pwd="ÒèòæÔòl" datasource="°Ôêè¦èæ®ÔòÌÜâ" host="192.168.1.254" default="1"/>
+  <row id="ISADBDepoRetail" user="ðÌ" pwd="ÒèòæÔòl" datasource="°Ôêè®ÔòÌÜâ" host="192.168.1.254" default="0"/>
+  <row id="ISADBDepoFinance" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÔêèÜæÌæÐÔ" host="192.168.1.254" default="0"/>
+</root>
+

@@ -1,0 +1,8 @@
+﻿USE ISAFinance_JKT
+GO
+
+
+
+INSERT INTO DBO.Inden
+SELECT * FROM ISAFinance.DBO.Inden WHERE RecordID NOT IN (SELECT RecordID FROM DBO.Inden)
+GO 

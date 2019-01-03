@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+
+
+INSERT INTO DBO.HistoryHPPA
+SELECT * FROM ISAdb.DBO.HistoryHPPA WHERE HistoryID NOT IN (SELECT HistoryID FROM DBO.HistoryHPPA)
+
+GO 

@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7C9CD09-7C62-453D-AB18-DF5EBE0EE25F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISA.Controls</RootNamespace>
+    <AssemblyName>ISA.Controls</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CabangComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Messages.cs" />
+    <Compile Include="CommandButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmFilterDialog.Designer.cs">
+      <DependentUpon>frmFilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderBrowserTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FolderBrowserTextBox.designer.cs">
+      <DependentUpon>FolderBrowserTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDOLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDOLookUp.designer.cs">
+      <DependentUpon>frmDOLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGudangLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGudangLookup.designer.cs">
+      <DependentUpon>frmGudangLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookupBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookupBarcode.Designer.cs">
+      <DependentUpon>frmLookupBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotaJualDetailLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotaJualDetailLookUp.designer.cs">
+      <DependentUpon>frmNotaJualDetailLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotaJualLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotaJualLookUp.Designer.cs" />
+    <Compile Include="frmPostAreaLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPostAreaLookUp.Designer.cs" />
+    <Compile Include="frmSalesLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesLookup.Designer.cs" />
+    <Compile Include="frmSecurityRightsLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRightsLookup.Designer.cs" />
+    <Compile Include="frmSecurityRolesLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityRolesLookup.Designer.cs" />
+    <Compile Include="frmSecurityUsersLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityUsersLookup.Designer.cs" />
+    <Compile Include="frmStockLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockLookUp.Designer.cs" />
+    <Compile Include="frmStockLookUpExtended.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockLookUpExtended.Designer.cs" />
+    <Compile Include="frmTokoLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTokoLookUp.Designer.cs" />
+    <Compile Include="Class\GlobalVar.cs" />
+    <Compile Include="HelpToolTipButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KodeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LookupBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupBarcode.Designer.cs">
+      <DependentUpon>LookupBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookupDO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupDO.Designer.cs" />
+    <Compile Include="LookupGudang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupGudang.Designer.cs" />
+    <Compile Include="LookupNotaJual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupNotaJual.Designer.cs" />
+    <Compile Include="LookupNotaJualDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupNotaJualDetail.Designer.cs" />
+    <Compile Include="LookupPostArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupPostArea.Designer.cs" />
+    <Compile Include="LookupSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupSales.Designer.cs" />
+    <Compile Include="LookupSecurityRights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupSecurityRights.Designer.cs" />
+    <Compile Include="LookupSecurityRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupSecurityRoles.Designer.cs" />
+    <Compile Include="LookupSecurityUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupSecurityUsers.Designer.cs" />
+    <Compile Include="LookupStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupStock.Designer.cs" />
+    <Compile Include="LookupToko.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LookupToko.Designer.cs" />
+    <Compile Include="MonthYearBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthYearBox.Designer.cs">
+      <DependentUpon>MonthYearBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PostAreaComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RangeDateBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RangeDateBox.Designer.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="WilIDComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZZtoko.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZZtoko.Designer.cs">
+      <DependentUpon>ZZtoko.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmFilterDialog.resx">
+      <DependentUpon>frmFilterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderBrowserTextBox.resx">
+      <DependentUpon>FolderBrowserTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDOLookUp.resx">
+      <DependentUpon>frmDOLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGudangLookup.resx">
+      <DependentUpon>frmGudangLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookupBarcode.resx">
+      <DependentUpon>frmLookupBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotaJualDetailLookUp.resx">
+      <DependentUpon>frmNotaJualDetailLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotaJualLookUp.resx" />
+    <EmbeddedResource Include="frmPostAreaLookUp.resx" />
+    <EmbeddedResource Include="frmSalesLookup.resx" />
+    <EmbeddedResource Include="frmSecurityRightsLookup.resx" />
+    <EmbeddedResource Include="frmSecurityRolesLookup.resx" />
+    <EmbeddedResource Include="frmSecurityUsersLookup.resx" />
+    <EmbeddedResource Include="frmStockLookUp.resx" />
+    <EmbeddedResource Include="frmStockLookUpExtended.resx" />
+    <EmbeddedResource Include="frmTokoLookUp.resx" />
+    <EmbeddedResource Include="LookupBarcode.resx">
+      <DependentUpon>LookupBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookupDO.resx" />
+    <EmbeddedResource Include="LookupGudang.resx" />
+    <EmbeddedResource Include="LookupNotaJual.resx" />
+    <EmbeddedResource Include="LookupNotaJualDetail.resx" />
+    <EmbeddedResource Include="LookupPostArea.resx" />
+    <EmbeddedResource Include="LookupSales.resx" />
+    <EmbeddedResource Include="LookupSecurityRights.resx" />
+    <EmbeddedResource Include="LookupSecurityRoles.resx" />
+    <EmbeddedResource Include="LookupSecurityUsers.resx" />
+    <EmbeddedResource Include="LookupStock.resx" />
+    <EmbeddedResource Include="LookupToko.resx" />
+    <EmbeddedResource Include="MonthYearBox.resx">
+      <DependentUpon>MonthYearBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeDateBox.resx" />
+    <EmbeddedResource Include="ZZtoko.resx">
+      <DependentUpon>ZZtoko.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISA.DAL\ISA.DAL.csproj">
+      <Project>{D32C7E7B-EE9F-4324-A5E5-D5B008A3F589}</Project>
+      <Name>ISA.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Important32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LockKey32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

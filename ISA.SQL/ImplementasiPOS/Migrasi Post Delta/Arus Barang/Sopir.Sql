@@ -1,0 +1,6 @@
+USE ISAdb_JKT
+GO
+DELETE FROM ISAdb_JKT.dbo.Sopir
+GO
+INSERT INTO dbo.Sopir
+SELECT * FROM ISAdb.dbo.Sopir

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLaporanOmzetCIPerKendaraan" targetNamespace="http://tempuri.org/dsLaporanOmzetCIPerKendaraan.xsd" xmlns:mstns="http://tempuri.org/dsLaporanOmzetCIPerKendaraan.xsd" xmlns="http://tempuri.org/dsLaporanOmzetCIPerKendaraan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLaporanOmzetCIPerKendaraan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLaporanOmzetCIPerKendaraan" msprop:Generator_DataSetName="dsLaporanOmzetCIPerKendaraan" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PerKendaraan" msprop:Generator_UserTableName="PerKendaraan" msprop:Generator_RowDeletedName="PerKendaraanRowDeleted" msprop:Generator_RowChangedName="PerKendaraanRowChanged" msprop:Generator_RowClassName="PerKendaraanRow" msprop:Generator_RowChangingName="PerKendaraanRowChanging" msprop:Generator_RowEvArgName="PerKendaraanRowChangeEvent" msprop:Generator_RowEvHandlerName="PerKendaraanRowChangeEventHandler" msprop:Generator_TableClassName="PerKendaraanDataTable" msprop:Generator_TableVarName="tablePerKendaraan" msprop:Generator_RowDeletingName="PerKendaraanRowDeleting" msprop:Generator_TablePropName="PerKendaraan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idtoko" msprop:Generator_UserColumnName="idtoko" msprop:Generator_ColumnPropNameInRow="idtoko" msprop:Generator_ColumnVarNameInTable="columnidtoko" msprop:Generator_ColumnPropNameInTable="idtokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="namatoko" msprop:Generator_UserColumnName="namatoko" msprop:Generator_ColumnPropNameInRow="namatoko" msprop:Generator_ColumnVarNameInTable="columnnamatoko" msprop:Generator_ColumnPropNameInTable="namatokoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alamat" msprop:Generator_UserColumnName="alamat" msprop:Generator_ColumnPropNameInRow="alamat" msprop:Generator_ColumnVarNameInTable="columnalamat" msprop:Generator_ColumnPropNameInTable="alamatColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kota" msprop:Generator_UserColumnName="kota" msprop:Generator_ColumnPropNameInRow="kota" msprop:Generator_ColumnVarNameInTable="columnkota" msprop:Generator_ColumnPropNameInTable="kotaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idwil" msprop:Generator_UserColumnName="idwil" msprop:Generator_ColumnPropNameInRow="idwil" msprop:Generator_ColumnVarNameInTable="columnidwil" msprop:Generator_ColumnPropNameInTable="idwilColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="namap" msprop:Generator_UserColumnName="namap" msprop:Generator_ColumnPropNameInRow="namap" msprop:Generator_ColumnVarNameInTable="columnnamap" msprop:Generator_ColumnPropNameInTable="namapColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="notelp" msprop:Generator_UserColumnName="notelp" msprop:Generator_ColumnPropNameInRow="notelp" msprop:Generator_ColumnVarNameInTable="columnnotelp" msprop:Generator_ColumnPropNameInTable="notelpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaSales" msprop:Generator_UserColumnName="NamaSales" msprop:Generator_ColumnPropNameInRow="NamaSales" msprop:Generator_ColumnVarNameInTable="columnNamaSales" msprop:Generator_ColumnPropNameInTable="NamaSalesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AgenNominalAktual" msprop:Generator_UserColumnName="AgenNominalAktual" msprop:Generator_ColumnPropNameInRow="AgenNominalAktual" msprop:Generator_ColumnVarNameInTable="columnAgenNominalAktual" msprop:Generator_ColumnPropNameInTable="AgenNominalAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AgenNominalTarget" msprop:Generator_UserColumnName="AgenNominalTarget" msprop:Generator_ColumnPropNameInRow="AgenNominalTarget" msprop:Generator_ColumnVarNameInTable="columnAgenNominalTarget" msprop:Generator_ColumnPropNameInTable="AgenNominalTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AgenSKUAktual" msprop:Generator_UserColumnName="AgenSKUAktual" msprop:Generator_ColumnPropNameInRow="AgenSKUAktual" msprop:Generator_ColumnVarNameInTable="columnAgenSKUAktual" msprop:Generator_ColumnPropNameInTable="AgenSKUAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="AgenSKUTarget" msprop:Generator_UserColumnName="AgenSKUTarget" msprop:Generator_ColumnPropNameInRow="AgenSKUTarget" msprop:Generator_ColumnVarNameInTable="columnAgenSKUTarget" msprop:Generator_ColumnPropNameInTable="AgenSKUTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda2NominalAktual" msprop:Generator_UserColumnName="Roda2NominalAktual" msprop:Generator_ColumnPropNameInRow="Roda2NominalAktual" msprop:Generator_ColumnVarNameInTable="columnRoda2NominalAktual" msprop:Generator_ColumnPropNameInTable="Roda2NominalAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda2NominalTarget" msprop:Generator_UserColumnName="Roda2NominalTarget" msprop:Generator_ColumnPropNameInRow="Roda2NominalTarget" msprop:Generator_ColumnVarNameInTable="columnRoda2NominalTarget" msprop:Generator_ColumnPropNameInTable="Roda2NominalTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda2SKUAktual" msprop:Generator_UserColumnName="Roda2SKUAktual" msprop:Generator_ColumnPropNameInRow="Roda2SKUAktual" msprop:Generator_ColumnVarNameInTable="columnRoda2SKUAktual" msprop:Generator_ColumnPropNameInTable="Roda2SKUAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda2SKUTarget" msprop:Generator_UserColumnName="Roda2SKUTarget" msprop:Generator_ColumnPropNameInRow="Roda2SKUTarget" msprop:Generator_ColumnVarNameInTable="columnRoda2SKUTarget" msprop:Generator_ColumnPropNameInTable="Roda2SKUTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda4NominalAktual" msprop:Generator_UserColumnName="Roda4NominalAktual" msprop:Generator_ColumnPropNameInRow="Roda4NominalAktual" msprop:Generator_ColumnVarNameInTable="columnRoda4NominalAktual" msprop:Generator_ColumnPropNameInTable="Roda4NominalAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda4NominalTarget" msprop:Generator_UserColumnName="Roda4NominalTarget" msprop:Generator_ColumnPropNameInRow="Roda4NominalTarget" msprop:Generator_ColumnVarNameInTable="columnRoda4NominalTarget" msprop:Generator_ColumnPropNameInTable="Roda4NominalTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda4SKUAktual" msprop:Generator_UserColumnName="Roda4SKUAktual" msprop:Generator_ColumnPropNameInRow="Roda4SKUAktual" msprop:Generator_ColumnVarNameInTable="columnRoda4SKUAktual" msprop:Generator_ColumnPropNameInTable="Roda4SKUAktualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Roda4SKUTarget" msprop:Generator_UserColumnName="Roda4SKUTarget" msprop:Generator_ColumnPropNameInRow="Roda4SKUTarget" msprop:Generator_ColumnVarNameInTable="columnRoda4SKUTarget" msprop:Generator_ColumnPropNameInTable="Roda4SKUTargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="percentAgenRp" msprop:Generator_UserColumnName="percentAgenRp" msprop:Generator_ColumnPropNameInRow="percentAgenRp" msprop:Generator_ColumnVarNameInTable="columnpercentAgenRp" msprop:Generator_ColumnPropNameInTable="percentAgenRpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="percentAgenSKU" msprop:Generator_UserColumnName="percentAgenSKU" msprop:Generator_ColumnPropNameInRow="percentAgenSKU" msprop:Generator_ColumnVarNameInTable="columnpercentAgenSKU" msprop:Generator_ColumnPropNameInTable="percentAgenSKUColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="percentRoda2Rp" msprop:Generator_UserColumnName="percentRoda2Rp" msprop:Generator_ColumnVarNameInTable="columnpercentRoda2Rp" msprop:Generator_ColumnPropNameInRow="percentRoda2Rp" msprop:Generator_ColumnPropNameInTable="percentRoda2RpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="percentRoda2SKU" msprop:Generator_UserColumnName="percentRoda2SKU" msprop:Generator_ColumnVarNameInTable="columnpercentRoda2SKU" msprop:Generator_ColumnPropNameInRow="percentRoda2SKU" msprop:Generator_ColumnPropNameInTable="percentRoda2SKUColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="percentRoda4Rp" msprop:Generator_UserColumnName="percentRoda4Rp" msprop:Generator_ColumnVarNameInTable="columnpercentRoda4Rp" msprop:Generator_ColumnPropNameInRow="percentRoda4Rp" msprop:Generator_ColumnPropNameInTable="percentRoda4RpColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="percentRoda4SKU" msprop:Generator_UserColumnName="percentRoda4SKU" msprop:Generator_ColumnVarNameInTable="columnpercentRoda4SKU" msprop:Generator_ColumnPropNameInRow="percentRoda4SKU" msprop:Generator_ColumnPropNameInTable="percentRoda4SKUColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KetKunj" msprop:Generator_UserColumnName="KetKunj" msprop:Generator_ColumnPropNameInRow="KetKunj" msprop:Generator_ColumnVarNameInTable="columnKetKunj" msprop:Generator_ColumnPropNameInTable="KetKunjColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

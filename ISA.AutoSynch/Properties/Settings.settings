@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ISA.AutoSynch.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="smtp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="smtplogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tss.palur.sas@gmail.com</Value>
+    </Setting>
+    <Setting Name="smtppassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tss.palur</Value>
+    </Setting>
+    <Setting Name="FTPName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp://fileserver.sas-autoparts.com/</Value>
+    </Setting>
+    <Setting Name="UserNameFTP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">isalive</Value>
+    </Setting>
+    <Setting Name="PassFTP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">isalive12345</Value>
+    </Setting>
+    <Setting Name="port" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="email" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GoogleDrive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ISAEceranApp\Dropbox\Release Program</Value>
+    </Setting>
+    <Setting Name="DirTemp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ISAEceranApp\ReleaseTemp</Value>
+    </Setting>
+    <Setting Name="DirMFinance" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ISAEceranApp\ISAEceranFinance</Value>
+    </Setting>
+    <Setting Name="DirPFinance" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\ISACabangFinance\ISA.Finance.exe</Value>
+    </Setting>
+    <Setting Name="DirMtrading" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ISAEceranApp\ISAEceranTrading</Value>
+    </Setting>
+    <Setting Name="DirPTrading" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\ISACabangTrading\ISA.Trading.exe</Value>
+    </Setting>
+    <Setting Name="DirMBengkel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\ISAEceranApp\ISAEceranBengkel</Value>
+    </Setting>
+    <Setting Name="DirPBengkel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\ISACabangBengkel\ISA.Bengkel.exe</Value>
+    </Setting>
+    <Setting Name="IPSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="UserSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="PassSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dotnet1</Value>
+    </Setting>
+    <Setting Name="enableSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoRelease" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoSetoran" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DirBackUp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\backup</Value>
+    </Setting>
+    <Setting Name="DataBackup" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

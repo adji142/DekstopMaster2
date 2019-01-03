@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+
+
+INSERT INTO DBO.AntarGudang
+SELECT * FROM ISAdb.DBO.AntarGudang WHERE RecordID NOT IN (SELECT RecordID FROM DBO.AntarGudang)
+
+GO 

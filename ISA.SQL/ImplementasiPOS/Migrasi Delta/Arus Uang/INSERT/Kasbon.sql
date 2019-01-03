@@ -1,0 +1,8 @@
+﻿USE ISAFinance_JKT
+GO
+
+
+
+INSERT INTO DBO.KasBon
+SELECT * FROM ISAFinance.DBO.KasBon WHERE RecordID NOT IN (SELECT RecordID FROM DBO.KasBon)
+GO 

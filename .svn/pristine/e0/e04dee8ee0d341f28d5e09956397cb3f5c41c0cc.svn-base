@@ -1,0 +1,6 @@
+USE ISAFinance_JKT
+GO
+DELETE FROM ISAFinance_JKT.dbo.InOut
+GO
+INSERT INTO ISAFinance_JKT.dbo.InOut
+SELECT * FROM ISAFinance.dbo.InOut

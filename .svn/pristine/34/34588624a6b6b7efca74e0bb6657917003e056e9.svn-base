@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ISA.Batch.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DbName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISADBDepoFinance</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

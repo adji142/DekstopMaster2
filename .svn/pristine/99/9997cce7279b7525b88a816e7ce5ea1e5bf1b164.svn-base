@@ -1,0 +1,4 @@
+<root>
+	<row appid="ISA.Finance" curversion="1.0.0.6" prevversion="1.0.0.5" /> 	
+        <row appid="ISA.Trading" curversion="1.0.0.6" prevversion="1.0.0.5" /> 	
+</root>

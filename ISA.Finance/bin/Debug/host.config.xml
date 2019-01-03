@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <!-- untuk depo -->-->
+  <row id="ISADBDepoNonRetail" user="ðÌ" pwd="ÒèòæÔòl" datasource="°Ôêè¦èæ®ÔòÌÜâ" host="172.16.10.146" default="1"/>
+  <row id="ISADBDepoRetail" user="ðÌ" pwd="ÒèòæÔòl" datasource="°Ôêè®ÔòÌÜâ" host="172.16.10.146" default="0"/>
+  <row id="ISADBDepoFinance" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÔêèÜæÌæÐÔ" host="172.16.146" default="0"/>
+</root>
+

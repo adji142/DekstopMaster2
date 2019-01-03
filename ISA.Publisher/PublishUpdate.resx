@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmdPublish.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAS3SURBVFhH7dZ7TFNXHAfwHxf64DFJcAMFvbKZZczwULDyxgDDwXiWMcdcNqNzywAJ85EoiILD
+        iXOAVRwPwZXxEmwLSKEFrTwFwktEcAOFEbtsTCH7BzP/Ws5+p5aFAeGhQLZkN/nktvee3+98e257ewH+
+        3/6LK6DD6EJsH4EDbX9AhGoMzGycV/ZjcAwMIbHn6esnW3/7fX+teuuRjqfgcfj8yoXgYoC49gnnj6SD
+        5Mu2UXJIpT53qOkx7JUPg9Eay5UJElk37vSh5EcSXvIDibk+QhJaflVHK0c2Hm5/Ag57ji0uhFXQJxCU
+        Vg6BKRIISZVC8FxSpCBMLYO91x7Yh1/pJ7tK7pH3r/SRD3CfcOsXElP7U9zBhkcQXtgJ3JdWLyxIdOsT
+        +EL1MDG5e1yW3D12dV5dj0vjGtQ3wwrv4OR3NXYW9xJhQQ+JVgyR+Cb13UjlsGlM0zi8EfLZ3CEYLh92
+        V6lNI6vvkyBxFwn+vntBhDju3cKeGYT53eQ9DBbf/JDsV9zfd7BxFALPVwNweLMHYbg82FU+zIbkdZDQ
+        vK4lIczrJAG57SRKPkBi60caopRDBhGqUVjvFjgzBIPJwiQDbLC4nSy1gNw2EpLXTuIaRv6MrB4IPoCr
+        4Z1U9M8QDIcLwtJ7bEBuK6Zeev45LWRHZjP5/Fo/OaIakkUpBuHT6iFYvUnwLIgurkBwcS/rl9VE/LIa
+        l41PRgMJyGkmR+uHJyLlfe4RjY+Aa7IGgNHjQkD+bXZHZj0mXV5vZdSR7RdukD3SHhJW0mtmuPZVDICX
+        wDevk/W6qCIrIv0G8Uy/HiGUDYKB6XoagAc+l9tYT1EtWX41/V4Z9WZvizvgFTv3Z98BHbwEnpdusR7n
+        FGS5uGNvFOed0wKCo9kzfwUeWY2sa4qcLAeXbypH3EWK17xw8rUu78x+H3C7WLfB6UwFWUqO2A+ddUu/
+        CfZxOUDvuLNuOroccP22HrYmS8iinJYQAdZMp+0xtu1MuZ1bRgOs8945/x/SlhMF4HxBxXcS1W5A7Hwc
+        U6otHJOl4VuSSoj9qdK/0fcOp67mCFKqwD6xAPQMjOaffHIEw9PXLNN8dHT1wMjSClxFyu02iUXE9mQx
+        sU2kiiY2J5W6C9KUYOH38cInfp6RfDMWtqVWeVofzyc2yDohX7L5KynYJhQA72Xz52m5uBp9vIPZnJY5
+        vHlMTDYdzw+0O1sFFsH7FtfkRUYzfEOwTasBmzMVYBWfB3yLjS/S7l9Uy+fzwdzcHCwtLcHKygpcXFzA
+        yclJw9HREXx9fSE0NHRO/v7+mrGTdc7OzmBtba3pybIs8HjTnow4HA5kZmaCUqmEyspKqKio0CgvL4ey
+        sjJKD3EomUzGkUgkPLQKGU9Dj/GkUqlmrBat1fSZ7EvnUCgUIBaLwcTEBDSp5HI5FBYW2qPdKBZ9jS4j
+        MZKjWq0a3KtQN7o9DT1Gz9ExFK2htd9pe9GetDedw54GEgjwoYQGwFQMHvRBJ1AWkmmbNOK+B93ReoB7
+        9Rx+xnPDqHdKTbM2DO15CSXQuTAAownAMAyIRCIoLi6mqzCJBtJDfLRqClN8vW4eZnjeeEqNvrYX7anp
+        X1RUBNnZ2WBsbAx/Af6fURl9ODFdAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Cara Publish / Update Program ISA :
+1. Pastikan program ini dijalankan di server ISA. 
+2. Letakkan file update .zip ke folder C:\Temp
+3. Tekan tombol Publish.
+4. Pilih file .zip yang berisi data-data untuk update program.
+5. Program ini akan mengupdate program ISA, tunggu hingga selesai.
+6. Jika publish sukses akan muncul pesan, Publish telah berhasil.</value>
+  </data>
+</root>

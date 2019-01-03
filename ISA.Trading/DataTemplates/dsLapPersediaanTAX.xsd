@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLapPersediaanTAX" targetNamespace="http://tempuri.org/dsLapPersediaanTAX.xsd" xmlns:mstns="http://tempuri.org/dsLapPersediaanTAX.xsd" xmlns="http://tempuri.org/dsLapPersediaanTAX.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISADbXtdConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISADbXtdConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Trading.Properties.Settings.GlobalReference.Default.ISADbXtdConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLapPersediaanTAX" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLapPersediaanTAX" msprop:Generator_DataSetName="dsLapPersediaanTAX" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BarangID" msprop:Generator_UserColumnName="BarangID" msprop:Generator_ColumnVarNameInTable="columnBarangID" msprop:Generator_ColumnPropNameInRow="BarangID" msprop:Generator_ColumnPropNameInTable="BarangIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="23" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaStok" msprop:Generator_UserColumnName="NamaStok" msprop:Generator_ColumnVarNameInTable="columnNamaStok" msprop:Generator_ColumnPropNameInRow="NamaStok" msprop:Generator_ColumnPropNameInTable="NamaStokColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QtyAwal" msdata:ReadOnly="true" msprop:Generator_UserColumnName="QtyAwal" msprop:Generator_ColumnVarNameInTable="columnQtyAwal" msprop:Generator_ColumnPropNameInRow="QtyAwal" msprop:Generator_ColumnPropNameInTable="QtyAwalColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="HPPA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="HPPA" msprop:Generator_ColumnVarNameInTable="columnHPPA" msprop:Generator_ColumnPropNameInRow="HPPA" msprop:Generator_ColumnPropNameInTable="HPPAColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyMasuk" msdata:ReadOnly="true" msprop:Generator_UserColumnName="QtyMasuk" msprop:Generator_ColumnVarNameInTable="columnQtyMasuk" msprop:Generator_ColumnPropNameInRow="QtyMasuk" msprop:Generator_ColumnPropNameInTable="QtyMasukColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyKeluar" msdata:ReadOnly="true" msprop:Generator_UserColumnName="QtyKeluar" msprop:Generator_ColumnVarNameInTable="columnQtyKeluar" msprop:Generator_ColumnPropNameInRow="QtyKeluar" msprop:Generator_ColumnPropNameInTable="QtyKeluarColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AGMasuk" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AGMasuk" msprop:Generator_ColumnVarNameInTable="columnAGMasuk" msprop:Generator_ColumnPropNameInRow="AGMasuk" msprop:Generator_ColumnPropNameInTable="AGMasukColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AGKeluar" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AGKeluar" msprop:Generator_ColumnVarNameInTable="columnAGKeluar" msprop:Generator_ColumnPropNameInRow="AGKeluar" msprop:Generator_ColumnPropNameInTable="AGKeluarColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyAkhir" msdata:ReadOnly="true" msprop:Generator_UserColumnName="QtyAkhir" msprop:Generator_ColumnVarNameInTable="columnQtyAkhir" msprop:Generator_ColumnPropNameInRow="QtyAkhir" msprop:Generator_ColumnPropNameInTable="QtyAkhirColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SaldoAkhir" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SaldoAkhir" msprop:Generator_ColumnVarNameInTable="columnSaldoAkhir" msprop:Generator_ColumnPropNameInRow="SaldoAkhir" msprop:Generator_ColumnPropNameInTable="SaldoAkhirColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

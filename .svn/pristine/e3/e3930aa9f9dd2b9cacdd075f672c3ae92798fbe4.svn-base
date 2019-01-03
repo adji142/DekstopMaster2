@@ -1,0 +1,9 @@
+﻿USE ISAdb_JKT
+GO
+
+DELETE FROM DBO.OrderPenjualan 
+WHERE HtrID NOT IN (SELECT HtrID FROM ISAdb.DBO.OrderPenjualan)
+
+
+GO
+
